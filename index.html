@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,41 @@
 <body>
     <h2> GitHub hosting page</h2>
 
-    <p>
-        Utilizamos GitHub Pages para alojar esta página estática.
-        Utilizamos el módulo de NODE gh-pages para subir la página.
-        Abrimos terminal:
-        *npm init -y        Creamos el archivo package.json
-        *npm i gh-pages     Instalamos el módulo gh-pages para subir la web
-        *Creamos el archivo .gitignore dónde irán las carpetas que no
-                                       vamos a subir 
+    <p> Utilizamos GitHub Pages para alojar esta página estática. </p> 
+    <p> Utilizamos el módulo de NODE gh-pages para subir la página. </p>
+        
+    <h3> Abrimos terminal: </h3>
+
+    <p><b> npm init -y </b>     Creamos el archivo package.json </p>
+    <p><b> npm i gh-pages </b>  Instalamos el módulo gh-pages para subir la web </p>
+        
+    <p> Creamos el archivo .gitignore dónde irán las carpetas que no vamos a subir </p>
+    <h3> En terminal: </h3>
+    <p><b> git init </b>        Incializamos un repositorio </p>                            
+    <p><b> git status </b>      Nos muestra en consola los archivos en rojo </p>
+    <p><b> git add . </b>       Añadimos los archivos al repositorio </p>
+    <p><b> git status </b>      Nos muestra en consola los archivos en verde </p>
+    <p><b> git commit -m "prueba commit_1" </b>     Creamos el commit de git </p>
+
+    <h3> AHORA SUBIMOS EL COMMIT A GitHub </h3>
+
+    <p> Entramos en GitHub y creamos un repositorio nuevo Publico.</p>
+    <p> En este caso le llamamos Alojar-html-GitHub</p>
+        
+    <h3> *Para subir los archivos de git al repositiorio </h3> 
+        
+    <h3> En terminal: </h3>
+     
+    <p>*<b> git remote add origin https://github.com/MMT74/Alojar_html_GitHub.git </b></p>
+    <p>*<b> git push -u origin main </b>
+
+    <h3> <b> Ahora vamos a subir el directorio al gh-pages con el modulo gh-pages </b></h3>
+    <p> <b> npx gh-pages -d . </b> </p>                   
+
+
         
 
-
-        
-
-    </p>
+   
     
 </body>
 </html>
